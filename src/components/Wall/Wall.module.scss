@@ -1,0 +1,44 @@
+
+
+.wall {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    
+    .img {
+        height: 440px;
+        width: 850px;
+    }
+}
+
+.first {
+    position: absolute;
+    left: 40px;
+    top: 0;
+}
+
+.second {
+    position: absolute;
+    right: 40px;
+    top: 0;
+}
+
+.content {
+    margin-top: 40%;
+    max-width: 500px;
+}
+
+.title {
+    font-size: 25px;
+    color: #1D155D;
+}
+
+.desc {
+    font-size: 18px;
+    color: #18456B;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

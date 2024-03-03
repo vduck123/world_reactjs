@@ -1,0 +1,88 @@
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 500px;
+    background-color: #312f4c;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin-top: 50px;
+    padding-left: 100px;
+    &-logo {
+
+        margin-bottom: 20px;
+
+        .logo {
+            height: 80px;
+            width: 190px;
+        }
+    }
+    
+
+    &-desc {
+        font-size: 16px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    &-contact {
+        margin-top: 20px;
+    }
+}
+
+.right {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    &-subscribe {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            text-transform: uppercase;
+        }
+
+        .input {
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+            background-color: transparent;
+            border-bottom: #fff 2px solid;
+
+            &:focus {
+                border: 1px #000 solid;
+            }
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+    }
+
+    &-usefull {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .link {
+            background-position: 0px 6px;
+            background-repeat: no-repeat;
+            background-image: url(https://worlddiabetesday.org/wddbrk/wp-content/themes/wddtheme/_/img/list_arrow.png);
+        }
+        span {
+            color: #fff;
+            margin-left: 15px;
+        }
+    }
+}
