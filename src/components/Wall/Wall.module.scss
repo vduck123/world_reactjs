@@ -1,10 +1,9 @@
 
 
 .wall {
-    height: 50vh;
+    height: 500px;
     width: 100%;
     position: relative;
-    
     .img {
         height: 440px;
         width: 850px;
@@ -24,21 +23,67 @@
 }
 
 .content {
-    margin-top: 40%;
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 450px;
+    .title {
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 25px;
+        color: #1D155D;
+    }
+    
+    .desc {
+        font-size: 18px;
+        color: #18456B;
+    }
+
+    
+    button:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
 }
 
-.title {
-    font-size: 25px;
-    color: #1D155D;
+
+
+
+
+.content-main {
+    width: 800px;
+    .title-main {
+        width: 550px;
+        color: #000;
+        font-size: 46px;
+        text-transform: uppercase;
+    }
+    
+    .desc-main {
+        width: 550px;
+        font-size: 22px
+    }
+
+    button:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
 }
 
-.desc {
-    font-size: 18px;
-    color: #18456B;
+
+
+
+.bg-white {
+    background-color: #fff;
 }
 
-button:hover {
-    cursor: pointer;
-    opacity: 0.8;
+.bg-blue {
+    background-color: #026F84;
+     
+    .img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
 }

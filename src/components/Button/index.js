@@ -6,7 +6,7 @@ const cx = classNames.bind(styles)
 
 function Button({text,primary,small,medium,large,className}) {
 
-    const classes = cx('wapper',{
+    const classes = cx('wrapper',{
         primary,
         small,
         medium,

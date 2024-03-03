@@ -8,7 +8,7 @@ const cx = classNames.bind(styles)
 
 function Footer() {
     return ( 
-        <footer className={cx('footer')}>
+        <div className={cx('footer')}>
             <div className={cx('left')}>
                 <div className={cx('left-logo')}>
                     <img src="https://worlddiabetesday.org/wddbrk/wp-content/themes/wddtheme/_/img/idf_logo_white_2023.png" alt="logo" className={cx('logo')} />
@@ -44,7 +44,7 @@ function Footer() {
                     <Link to='/' className={cx('link')}><span>Kids and Diabetes in Schools</span></Link>
                 </div>
             </div>
-        </footer>
+        </div>
     );
 }
 
