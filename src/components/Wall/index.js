@@ -1,3 +1,4 @@
+
 import classNames from "classnames/bind";
 
 import styles from './Wall.module.scss'
@@ -10,8 +11,6 @@ function Wall({
     title,
     desc,
     btnText,
-    btnSize='small',
-    primary,
     posA,
     posB,
     bgColor='bg-white',
@@ -21,6 +20,8 @@ function Wall({
     const wallClasses = cx('wall', {
         [bgColor]: bgColor
     });
+
+    
 
     return ( 
         <div className={wallClasses}>
@@ -48,4 +49,4 @@ function Wall({
     );
 }
 
-export default Wall;{}
+export default Wall;
