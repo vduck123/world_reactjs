@@ -1,7 +1,7 @@
 
 
 .wall {
-    height: 500px;
+    height: 520px;
     width: 100%;
     position: relative;
     .img {
@@ -53,16 +53,20 @@
 
 .content-main {
     width: 800px;
+    color: #fff;
     .title-main {
         width: 550px;
-        color: #000;
         font-size: 46px;
         text-transform: uppercase;
     }
     
     .desc-main {
         width: 550px;
-        font-size: 22px
+        font-size: 20px
+    }
+
+    button {
+        margin-top: 20px;
     }
 
     button:hover {
@@ -81,6 +85,63 @@
 .bg-blue {
     background-color: #026F84;
      
+    .img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.bg-blue2 {
+    background-color: #497EBC;
+     
+    .img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.bg-purple {
+    background-color: #4F3877;
+
+    .img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.bg-purple2 {
+    background-color: #7C5196;
+    .img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.bg-purple3 {
+    background-color:#45507F ;
+    .img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.bg-green {
+    background-color:#079191;
+    .img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.bg-red {
+    background-color: #B54158;
     .img {
         height: 500px;
         width: 100%;

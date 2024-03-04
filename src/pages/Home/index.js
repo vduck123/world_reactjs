@@ -6,6 +6,7 @@ import Wall from "../../components/Wall";
 
 import styles from './Home.module.scss'
 import Partners from "../../components/Layout/Partners";
+import Poster from "../../components/Layout/Poster";
 
 const cx = classNames.bind(styles)
 
@@ -117,6 +118,7 @@ function Home() {
                 })}
             </div>
             <Partners />
+            <Poster />
             <Footer />
         </div>
         

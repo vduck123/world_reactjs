@@ -1,0 +1,23 @@
+
+
+.list {
+    list-style: none;
+    font-size: 18px;
+    color: #1D155D;
+
+    
+    .item {
+        letter-spacing: 1px;
+        line-height: 2rem;
+        text-transform: uppercase;
+
+        &:nth-child(1) {
+            font-weight: bolder;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: #000;
+        }
+    }
+}

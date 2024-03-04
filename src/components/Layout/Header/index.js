@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { Link } from 'react-router-dom';
-import Wall from '../../Wall';
+
 
 const cx = classNames.bind(styles);
 
@@ -20,11 +20,11 @@ function Header() {
                 </div>
                 <div  className={cx('nav-list')}>
                     <Link to='/about' className={cx('nav-item')}>ABOUT WDD</Link>
-                    <Link to='/about' className={cx('nav-item')}>GET INVOLVED</Link>
-                    <Link to='/about' className={cx('nav-item')}>RESOURCES</Link>
-                    <Link to='/about' className={cx('nav-item')}>YOUR ACTIVITY</Link>
-                    <Link to='/about' className={cx('nav-item')}>MEDIA</Link>
-                    <Link to='/about' className={cx('nav-item')}>CONTACT</Link>
+                    <Link to='/get-involved' className={cx('nav-item')}>GET INVOLVED</Link>
+                    <Link to='/resource' className={cx('nav-item')}>RESOURCES</Link>
+                    <Link to='/your-activity' className={cx('nav-item')}>YOUR ACTIVITY</Link>
+                    <Link to='/media' className={cx('nav-item')}>MEDIA</Link>
+                    <Link to='/contact' className={cx('nav-item')}>CONTACT</Link>
                 </div>
             </div>
             

@@ -1,7 +1,7 @@
 
 .box {
     position: relative;
-    height: 500px;
+    height: 400px;
     h3 {
         font-size: 36px;
         text-transform: uppercase;
@@ -32,6 +32,7 @@
     bottom: 20px;
 
     &:hover {
+        cursor: pointer;
         opacity: 0.6;
     }
 }
