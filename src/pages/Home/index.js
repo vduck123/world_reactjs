@@ -12,6 +12,19 @@ const cx = classNames.bind(styles)
 
 function Home() {
 
+    const handleClickWall1 = () => {
+        alert('test thôi')
+    }
+    
+    const handleBlockClick = (e) => {
+        if (e) {
+            e.preventDefault();
+        }
+    }
+    
+    
+
+
     const walls = [
         {
             title: "Know your risk, Know your response",
@@ -23,6 +36,9 @@ function Home() {
             btnSize: 'large',
             isMain: true,
             bgColor: 'bg-blue',
+            href: 'https://translate.google.com/',
+            to: false,
+            onClick: handleClickWall1
         } ,
         {
             title: "Diabetes and well-being" ,
@@ -32,7 +48,10 @@ function Home() {
             posA: 'first' ,
             posB: 'second',
             btnSize: 'small',
-            isMain:false
+            isMain: false ,
+            href: false,
+            to: false,
+            onClick: handleBlockClick
         } ,
         {
             title: "Support our call to action to policymakers" ,
@@ -42,7 +61,10 @@ function Home() {
             posA: 'second' ,
             posB: 'first',
             btnSize: 'small',
-            isMain: false
+            isMain: false ,
+            href: false,
+            to: false,
+            onClick: handleBlockClick
         } ,
         {
             title: "More than 2 in 3 people with diabetes already have complications at diagnosis" ,
@@ -52,7 +74,10 @@ function Home() {
             posA: 'first' ,
             posB: 'second',
             btnSize: 'small',
-            isMain: false
+            isMain: false ,
+            href: false,
+            to: false,
+            onClick: handleBlockClick
         } ,
         {
             title: "WDD around, the world" ,
@@ -62,7 +87,10 @@ function Home() {
             posA: 'second' ,
             posB: 'first',
             btnSize: 'small',
-            isMain: false
+            isMain: false ,
+            href: false ,
+            to: false ,
+            onClick: handleBlockClick
         } ,
         {
             title: "Know your risk, of type 2 diabetes" ,
@@ -72,7 +100,11 @@ function Home() {
             posA: 'first' ,
             posB: 'second',
             btnSize: 'small',
-            isMain: false,
+            isMain: false ,
+            href: false ,
+            to: false ,
+            onClick: handleBlockClick
+            
         } ,
         {
             title: "1 in 10 adults are living with diabetes" ,
@@ -82,7 +114,10 @@ function Home() {
             posA: 'second' ,
             posB: 'first',
             btnSize: 'small',
-            isMain: false,
+            isMain: false ,
+            href: false ,
+            to: false ,
+            onClick: handleBlockClick
         } ,
         {
             title: "Insulin at 100" ,
@@ -92,7 +127,10 @@ function Home() {
             posA: 'first' ,
             posB: 'second',
             btnSize: 'small',
-            isMain: false,
+            isMain: false ,
+            href: false ,
+            to: false ,
+            onClick: handleBlockClick
         }
     ]
 
@@ -113,6 +151,9 @@ function Home() {
                             posB={wall.posB} 
                             isMain={wall.isMain}
                             bgColor={wall.bgColor}
+                            href={wall.href}
+                            to={wall.to}
+                            onClick={wall.onClick}
                         />
                     )
                 })}

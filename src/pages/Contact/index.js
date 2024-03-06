@@ -11,6 +11,12 @@ import Footer from "../../components/Layout/Footer";
 const cx = classNames.bind(styles);
 
 function Contact() {
+  const handleBlockClick = (e) => {
+    if (e) {
+      e.preventDefault();
+    }
+  };
+
   const wall = {
     title: "Contact us",
     desc: "",
@@ -20,6 +26,9 @@ function Contact() {
     posB: "second",
     isMain: true,
     bgColor: "bg-purple2",
+    href: false,
+    to: false,
+    onClick: handleBlockClick,
   };
 
   return (
@@ -35,6 +44,9 @@ function Contact() {
         posB={wall.posB}
         isMain={wall.isMain}
         bgColor={wall.bgColor}
+        href={wall.href}
+        to={wall.to}
+        onClick={wall.onClick}
       />
       <div className={cx("box")}>
         <div className={cx("left")}>
@@ -48,8 +60,14 @@ function Contact() {
               <input required="" name="email" id="email" type="text" />
             </div>
             <div class="form-group">
-                <label for="textarea">How Can We Help You?</label>
-                <textarea required="" cols="50" rows="10" id="textarea" name="textarea"></textarea>
+              <label for="textarea">How Can We Help You?</label>
+              <textarea
+                required=""
+                cols="50"
+                rows="10"
+                id="textarea"
+                name="textarea"
+              ></textarea>
             </div>
             <button type="submit" className={cx("form-submit-btn")}>
               Submit
@@ -57,13 +75,17 @@ function Contact() {
           </form>
         </div>
         <div className={cx("right")}>
-          <span className={cx("right-text1")}>International Diabetes Federation</span>
+          <span className={cx("right-text1")}>
+            International Diabetes Federation
+          </span>
           <br />
           <span className={cx("right-text2")}>Avenue Hermann-Debroux 54</span>
           <br />
           <span className={cx("right-text2")}>B-1160 Brussels, Belgium</span>
           <br />
-          <a className={cx("right-text3")} href="#">wdd@idf.org</a>
+          <a className={cx("right-text3")} href="/">
+            wdd@idf.org
+          </a>
         </div>
       </div>
       <Poster />

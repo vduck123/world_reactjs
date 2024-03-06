@@ -1,4 +1,4 @@
-import classNames from "classnames/bind";
+// import classNames from "classnames/bind";
 
 import Footer from "../../components/Layout/Footer";
 import Header from "../../components/Layout/Header";
@@ -6,13 +6,20 @@ import Partners from "../../components/Layout/Partners";
 import Poster from "../../components/Layout/Poster";
 import Wall from "../../components/Wall";
 
-import styles from './About.module.scss'
+// import styles from './About.module.scss'
 import Menu from "../../components/Menu";
 import Content from "../../components/Content";
 
 
-const cx = classNames.bind(styles)
+// const cx = classNames.bind(styles)
+
 function About() {
+     
+    const handleBlockClick = (e) => {
+        if (e) {
+            e.preventDefault();
+        }
+    }
 
     const wall = {
         title: "About World Diabetes Day",
@@ -23,6 +30,9 @@ function About() {
         posB: 'second',
         isMain: true,
         bgColor: 'bg-purple',
+        href: false ,
+        to: false ,
+        onClick: handleBlockClick
     } 
 
     const MenuItem = [
@@ -76,6 +86,9 @@ function About() {
                 posB={wall.posB} 
                 isMain={wall.isMain}
                 bgColor={wall.bgColor}
+                href={wall.href}
+                to={wall.to}
+                onClick={wall.onClick}
             />
             <Content title={title} paragraphs={paragraphs} list={list} left={<Menu data={MenuItem} />} />
             <Poster />

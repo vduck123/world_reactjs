@@ -14,12 +14,19 @@ function Wall({
     posA,
     posB,
     bgColor='bg-white',
-    isMain=false
+    isMain=false,
+    href,
+    to,
+    onClick
 }) {
     
     const wallClasses = cx('wall', {
         [bgColor]: bgColor
     });
+
+    const handleClick = () => {
+        onClick();
+    }
 
     
 
@@ -31,19 +38,19 @@ function Wall({
                         <div className={cx('content-main')}>
                             <h3 className={cx('title-main')}>{title} </h3>
                             <p className={cx('desc-main')}>{desc}</p>
-                            <Button text={btnText} large primary />
+                            <Button text={btnText} large primary href={href} to={to} onClick={handleClick} />
                         </div>
                     : 
                     <div className={cx('content')}>
                         <span className={cx('title')}>{title} </span>
                         <p className={cx('desc')}>{desc}</p>
-                        <Button text={btnText} small primary />
+                        <Button text={btnText} small primary href={href} to={to} onClick={handleClick} />
                     </div> 
                 }
                 
             </div>
             <div className={cx(posB)}>
-                <img src={img} alt="image" className={cx('img')}/>
+                <img src={img} alt={title} className={cx('img')}/>
             </div>
         </div>
     );
